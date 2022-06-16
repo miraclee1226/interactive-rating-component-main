@@ -17,7 +17,7 @@ button {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: hsl(216, 12%, 54%);
+    background-color: hsl(260, 25%, 12%);
     border-radius: 50%;
     margin-bottom: 30px;
 }
@@ -41,6 +41,7 @@ button {
 }
 
 .fullContent {
+    
     margin: 30px 30px 0;
 }
 
@@ -69,7 +70,7 @@ ul {
     color: hsl(216, 12%, 54%);
 }
 
-.num1 {
+ul button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,9 +78,33 @@ ul {
     width: 45px;
     height: 45px;
     background-color: hsl(260, 25%, 12%);
+    color: hsl(216, 12%, 54%);
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
 
-.num1 li {
-    position: absolute;
+.submit {
+    letter-spacing: 0.3em;
+    width: 340px;
+    height: 50px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.thankYou {
+    display: none;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 30px 0;
+
 }
