@@ -9,40 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="bgColorblack">
-        <div class="fullContent">
+        <div class="fullContent container">
             <div class="circle">
                 <img class="icon-star" src="./assets/icon-star.svg" alt="">
             </div>
             <h1 class="title">How did we do?</h1>
             <p class="content">Please let us know how we did with your support request. All feedback is appreciated to help us imporve our offering!</p>
-            <ul>
-                <li>
-                    <button type="submit" class="num1">1</button>
-                </li>
 
-                <li>
-                    <button class="num2">2</button>
-                </li>
-                <li>
-                    <button class="num3">3</button>
-                </li>
-                <li>
-                    <button class="num4">4</button>
-                </li>
-                <li>
-                    <button class="num5">5</button>
-                    </li>
-            </ul>
-            <form action="">
-                <button type="submit" class="submit" id="submit">SUBMIT</button>
-            </form>
+            <div class="span">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+
+            <button class="button">SUBMIT</button>
         </div>
-        <div class="thankYou">
-            <img src="./assets/illustration-thank-you.svg" alt="">
-            <h1  class="title">Thank you!</h1>
+        
+        <div class="container hidden">
+            <img class="thankYou-illust" src="./assets/illustration-thank-you.svg" alt="">
+            <div class="itemSel"></div>
+            <h1 class="title">Thank you!</h1>
             <p class="content">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
         </div>
     </div>
