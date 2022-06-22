@@ -1,6 +1,7 @@
 "use strict";
 window.addEventListener("load", function() {
-let ratingItems = document.querySelectorAll('span');
+
+let ratingItems = document.querySelectorAll('i');
 let butSub = document.querySelector('.button');
 let selField = document.querySelector('.itemSel');
 for(let item of ratingItems){
@@ -21,11 +22,23 @@ butSub.onclick = function(){
     }
 }
 
-ratingItems.click(function() {
-    toggleClass()
-})
+const CLICKED_CLASS = "clicked";
+const title = document.querySelector(".spanNum");
+
+function handleClick() {
+    title.classList.toggle(CLICKED_CLASS);
+}
+
+title.addEventListener("click", handleClick);
+
+function init(){
+    handleClick();
+    }
+
+    init();
 
 });
+
 
 
 
