@@ -6,10 +6,15 @@
 h1,
 p,
 li,
+i,
 button {
     font-family: 'Epilogue', sans-serif !important;
 }
 
+
+body {
+    background-color: black;
+}
 .circle{
     position: relative;
     display: flex;
@@ -67,7 +72,7 @@ button {
     
 }
 
-.span span {
+.spanNum {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,11 +83,12 @@ button {
     background-color: hsl(260, 25%, 12%);
 }
 
-.span span:hover {
+.spanNum:hover {
     color: white;
     background-color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
+
 
 .button {
     letter-spacing: 0.3em;
@@ -92,6 +98,7 @@ button {
     border-radius: 30px;
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 .button:hover {
@@ -131,4 +138,9 @@ button {
 
 .thankYou-illust {
     margin-bottom: 30px;
+}
+
+.clicked {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
 }
