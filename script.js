@@ -1,7 +1,7 @@
 "use strict";
 window.addEventListener("load", function() {
 
-let ratingItems = document.querySelectorAll('i');
+let ratingItems = document.querySelectorAll('span');
 let butSub = document.querySelector('.button');
 let selField = document.querySelector('.itemSel');
 for(let item of ratingItems){
@@ -22,20 +22,21 @@ butSub.onclick = function(){
     }
 }
 
-const CLICKED_CLASS = "clicked";
-const title = document.querySelector(".spanNum");
 
-function handleClick() {
-    title.classList.toggle(CLICKED_CLASS);
+const span = document.querySelector('.span');
+
+function select(divEl, spanEl) {
+    Array.from(divEl.children).forEach (
+        v => v.classList.remove('selected')
+    )
+    if(spanEl) spanEl.classList.add('selected');
 }
 
-title.addEventListener("click", handleClick);
+span.addEventListener('click', e => {
+    const selected = e.target;
+    select(span, selected);
+})
 
-function init(){
-    handleClick();
-    }
-
-    init();
 
 });
 
