@@ -22,7 +22,6 @@ butSub.onclick = function(){
     }
 }
 
-
 const span = document.querySelector('.span');
 
 function select(divEl, spanEl) {
